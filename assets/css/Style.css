@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* body width */
+html, body{
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: normal;
+}
+/* opening */
+
+/* background */
+.Background_1{
+  background: url(../images/bg_3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-y: auto; 
+}
+/* navigation */
+.nav{
+  width: 345px;
+  height: auto;
+  position: absolute;
+  top: 34%;
+  left: 0;
+}
+/* a:link in navigation */
+.nav a{
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Verdana;
+  font-weight: bold;
+  height: 90px;
+  margin: 5px 0;
+  display: inline-block;
+ background-color: rgba(77, 9, 9, 0.763);
+  color:white;
+  line-height: 100px;
+  text-align: center;
+  transition: 200ms;
+}
+/* a from a:link in navigation  */
+a.active, .nav a:hover{
+  background-color: rgba(255, 255, 255, 0.77);
+    color:  rgb(77, 9, 9);
+    width: 100%;
+}
+.a{
+ width: 95%;
+}
+.b{
+  width: 85%;
+}
+.c{
+  width: 80%;
+}
+.d{
+  width: 90%;
+}
+
+.content{
+  position: absolute;
+  width: 780px;
+  min-height: 550px;
+  height: auto;
+  right: 0;
+  top: 10%;
+}
+/* home css */
+.home{
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-family: Verdana;
+}
+.home h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-right: 12px;
+  border-bottom: 2px solid rgba(193, 13, 13, 0.742);
+}
+.home h2{
+  padding: 6px 0;
+  opacity: 0.8;
+}
+.home h3{
+  padding-left: 4px;
+}
+/* aboutme css */
+.about_me{
+  position: absolute;
+  right: 10;
+  left: 670px;
+  top: 80px;  
+  color: white;
+  font-family: Verdana;
+  padding: 0 60px;
+  display: none;
+}
+.about_me p{
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+  .img_about{
+    position: absolute;
+    right: 10;
+    left: 450px;
+    bottom: 46%;  
+    display: none;
+   }
+
+.about_me_img{
+  vertical-align: middle;
+  width: 270px;
+  height: 270px;
+  border: 1px solid rgba(138, 17, 17, 0.811);
+}
+
+/* achievement css {*/
+.achieve{
+  position: absolute;
+  right: 10;
+  left: 660px;
+  top: 90px;  
+  color: white;
+  font-family: Verdana;
+  padding: 0 60px;
+  
+  display: none;
+}
+.achieve h1{
+  font-size: 45px;
+  line-height: 22px;
+  margin-bottom: 14px;  
+}
+.achieve h2{
+  border-bottom: 2px solid rgba(193, 13, 13, 0.742);
+}
+.image_good img{
+  width: 23%;
+  margin-top: 10px;
+  float: left;
+margin-left: 14px;
+  border: 2px solid rgba(138, 17, 17, 0.811);
+}
+
+/* contact */
+.contact{
+  position: absolute;
+  right: 0;
+  left: 700px;
+  top: 140px;  
+  color: white;
+  font-family: Verdana;
+  padding: 0 50px;
+  display: none;
+}
+.contact_content{
+  /* font-size: 50px; */
+  line-height: 23px;
+  margin-bottom: 14px;
+  float: left;
+  padding-left:  50px;
+}
+.contact_content h3{
+  font-size: 20px;
+}
+
+/* avatar_postion */
+.img-avatar{
+  position: absolute;
+left: 800px;
+top: 200px;
+padding: 40px;
+}
+
+/* avatar */
+.avatar {
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.opening{
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-y: auto; 
+}
+.click{
+  position:absolute;
+  right: 10px;
+  bottom: 10px;
+  color: white;
+  font-family: Verdana;
+}
+.click h3{
+  font-size: 35px;
+  align-items: center;
+  text-transform: uppercase;
+  padding-right: 12px;
+  border-bottom: 2px solid red;
+}

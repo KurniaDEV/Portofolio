@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="assets/js/jQuary-3.5.1.full.js"></script>
+    <script>
+        // js for selected navigation
+        $(document).ready(function(){
+
+            $('a').click(function(){
+                // alert("im click")
+                var selected = $(this);
+                $('a').removeClass('active')
+                $(selected).addClass('active')
+            });
+            // for click navbar
+            var $a = $('.a'),
+            $b = $('.b'),
+            $c = $('.c'),
+            $d = $('.d'),
+            $home = $('.home'),
+            $about_me = $('.about_me'),
+            $img_about = $('.img_about')
+            $achieve = $('.achieve'),
+            $contact = $('.contact'),
+            $avatar = $('.img-avatar')
+
+            $a.click(function(){
+                $home.fadeIn(); 
+                $avatar.fadeIn();
+                $about_me.fadeOut(); 
+                $img_about.fadeOut();
+                $achieve.fadeOut();
+                $contact.fadeOut(); 
+            });
+            
+             $b.click(function(){
+                $about_me.fadeIn();
+                $img_about.fadeIn();
+                $home.fadeOut();
+                $avatar.fadeOut();
+                $achieve.fadeOut();
+                $contact.fadeOut(); 
+
+             });
+             $c.click(function(){
+                $achieve.fadeIn(); 
+                $home.fadeOut();
+                $avatar.fadeOut();
+                $about_me.fadeOut();
+                $img_about.fadeOut(); 
+                $contact.fadeOut(); 
+             });
+             $d.click(function(){
+                $contact.fadeIn(); 
+                $home.fadeOut();
+                $avatar.fadeOut();
+                $about_me.fadeOut(); 
+                $img_about.fadeOut();
+                $achieve.fadeOut();
+                
+
+
+             });      
+             var $open = $('.opening')
+             $open.click(function(){
+                 $open.slideUp('slow');
+             });   
+
+        });
+    </script>
+    <title>Portofolio</title>
+</head>
+<body>
+    <div class="Background_1" >
+        <!-- navigation -->
+        <div class="nav">
+            <a class="a active" href="http://">HOME</a>
+            <a class="b" href="http://">ABOUT ME</a>
+            <a class="c" href="http://">IM GOOD AT</a>
+            <a class="d" href="http://">CONTACT</a>
+        </div>
+
+     
+
+        <div class="img-avatar">
+            <a href="#"><img src="assets/images/_DSC1518aa.jpg" class="avatar" alt="" srcset=""></a>
+        </div>
+    <!-- content -->
+    <div class="content">
+    <!-- home -->
+        <div class="home">
+            <h3>I am</h3>
+             <h1>Muhammad Akbar</h1>
+             <h2>Junior Progammer</h2>
+        </div>
+    </div>
+    
+    <!-- about me -->
+    <div class="img_about">
+        <img src="assets/images/IMG-20210103-WA0001XD.jpg" class="about_me_img" alt="" srcset="">
+        </div>
+    <div class="about_me">
+        <p><b>Muhammad Akbar Kurnia Burhan</b><br>
+            A child born in Kendal on the seventh of March,
+             two thousand and four. have a perspective in the field of programming 
+             and are interested in something related to technology and development. 
+             Akbar attended vocational high school Muhammadiyah 04 Sukorejo and has parents named Lutfahenny and Yudita Titik Wuriyanto.
+              Currently, Akbar lives in Sukorejo with his parents.</p>
+        <p>Akbar has an interest in game software development, he tries to set up his own game studio by doing 
+            his own hard work. akbar can also code the web and create a dynamic web with a different appeal from
+             the others. he is now fighting for his future.
+
+        </p>
+    </div>
+    <!-- im good at -->
+    <div class="achieve">
+        <h1><b>Im Good At</b></h1>
+        <h2></h2>
+        <div class="image_good">
+        <img src="assets/images/indexCorp.jpg" alt="" srcset="">
+        <img src="assets/images/html.png" alt="" srcset="">
+        <img src="assets/images/logo-css.png" alt="" srcset="">
+        <img src="assets/images/python.jpg" alt="" srcset="">
+    </div>
+    </div>
+    <!-- contact -->
+    <div class="contact">
+        
+        <div class="contact_content">
+            <h3> Email </h3>
+            <p><b>Akku.burhan77@gmail.com</b></p>
+            </div>
+        <div class="contact_content">
+            <h3 style="font-size: 22px;" >my location </h3>
+            <iframe src="" style="height:0.12mm;" frameborder="0">a</iframe>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.6843386398755!2d109.99298504989848!3d-7.162443694803089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e707280cd96e445%3A0x6571d990795db53d!2sNgargosari%2C%20Purwo%20Sari%2C%20Kec.%20Sukorejo%2C%20Kabupaten%20Kendal%2C%20Jawa%20Tengah%2051363!5e0!3m2!1sid!2sid!4v1616764456725!5m2!1sid!2sid" width="330" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+            <div class="contact_content">
+                <h3> Phone Number </h3>
+                <p><i>+6283838592811</i></p>
+                </div>
+                <div class="contact_content">
+                    <h3> Social Media </h3>
+                    <a href="https://www.instagram.com/kuceng_77/" target="_blank"><i class="fab fa-instagram" style="color: white; font-size: 20px;"></i></a>
+                    <a href="http://github.com/SGWN" target="blank"><i class="fab fa-github-square" style="color: white; font-size: 20px;"></i></a>
+                    <a href="http://github.com/SGWN" target="blank"><i class="fab fa-facebook-square" style="color: white; font-size: 20px;"></i></a>
+
+                    </div>
+                                
+
+    </div>
+    <div class="opening">
+        <div class="click">
+    <h3>Click To open</h3>
+    </div>
+    </div>
+</div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
